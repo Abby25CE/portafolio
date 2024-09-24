@@ -27,7 +27,6 @@ export const RevealBento = () => {
         <EmailListBlock />
         <LocationBlock />
         <WorkBlock />
-        <SocialsBlock />
       </motion.div>
       <Footer />
     </div>
@@ -173,16 +172,153 @@ const SocialsBlock = () => (
 );
 
 const WorkBlock = () => (
-  <Block
-    whileHover={{
-      rotate: "2.5deg",
-      scale: 1.1,
-    }}
-    className="col-span-6 bg-slate-700 md:col-span-3"
-  >
-    <h1>Prueba tecnica</h1>
-    <p>Buscador de Peliculas con uso de JSON </p>
-  </Block>
+  <>
+    <Block
+      whileHover={{
+        rotate: "2.5deg",
+        scale: 1.1,
+      }}
+      className="col-span-6 bg-slate-700 md:col-span-3"
+    >
+      <h1>Prueba tecnica</h1>
+      <h2>Buscador de Peliculas con uso de API</h2>
+      <p>Con uso de useContext, creacion de CustomeHooks</p>
+      <a
+        href="https://github.com/Abby25CE/Buscador_Peliculas.git"
+        className="flex items-center gap-1 text-red-300 hover:underline"
+      >
+        Ver codigo <FiArrowRight />
+      </a>
+    </Block>
+    <Block
+      whileHover={{
+        rotate: "2.5deg",
+        scale: 1.1,
+      }}
+      className="col-span-6 bg-slate-700 md:col-span-3"
+    >
+      <h1>Prueba tecnica</h1>
+      <h2>
+        Tienda vitual con uso de JSON, carrito, uso de useContext, useId y
+        useReducer
+      </h2>
+      <a
+        href="https://github.com/Abby25CE/Shopping.git"
+        className="flex items-center gap-1 text-red-300 hover:underline"
+      >
+        Ver codigo <FiArrowRight />
+      </a>
+    </Block>
+    <Block
+      whileHover={{
+        rotate: "2.5deg",
+        scale: 1.1,
+      }}
+      className="col-span-6 bg-slate-700 md:col-span-3"
+    >
+      <h1>Este mismo portafolio</h1>
+      <p>
+        Uso de componentes, clases taildwind, uso de animacioes con FramerMotion
+      </p>
+      <a
+        href="https://github.com/Abby25CE/portafolio.git"
+        className="flex items-center gap-1 text-red-300 hover:underline"
+      >
+        Ver codigo <FiArrowRight />
+      </a>
+    </Block>
+    <Block
+      whileHover={{
+        rotate: "2.5deg",
+        scale: 1.1,
+      }}
+      className="col-span-6 bg-slate-700 md:col-span-3"
+    >
+      <h1>Prueba tecnica Calculadora</h1>
+      <p>
+        Uso de componentes, clases taildwind, crreacion de diferentes tipos de
+        temas.
+      </p>
+      <a
+        href="https://github.com/Abby25CE/Calculadora.git"
+        className="flex items-center gap-1 text-red-300 hover:underline"
+      >
+        Ver codigo <FiArrowRight />
+      </a>
+    </Block>
+    <Block
+      whileHover={{
+        rotate: "2.5deg",
+        scale: 1.1,
+      }}
+      className="col-span-6 bg-slate-700 md:col-span-3"
+    >
+      <h1>Prueba tecnica con API</h1>
+      <p>
+        Recupera un hecho aleatorio de gatos de la primera API Recuperar la
+        primera palabra del hecho Muestra una imagen de un gato con la primera
+        palabra.
+      </p>
+      <a
+        href="https://github.com/Abby25CE/React_Prueba.git"
+        className="flex items-center gap-1 text-red-300 hover:underline"
+      >
+        Ver codigo <FiArrowRight />
+      </a>
+    </Block>
+    <Block
+      whileHover={{
+        rotate: "2.5deg",
+        scale: 1.1,
+      }}
+      className="col-span-6 bg-slate-700 md:col-span-3"
+    >
+      <h1>Prueba tecnica Clima</h1>
+      <p>
+        Prueba Tecnica con uso de API del clima, visualiza estados del clima
+        actuales y futuros
+      </p>
+      <a
+        href="https://github.com/Abby25CE/Clima_React.git"
+        className="flex items-center gap-1 text-red-300 hover:underline"
+      >
+        Ver codigo <FiArrowRight />
+      </a>
+    </Block>
+    <Block
+      whileHover={{
+        rotate: "2.5deg",
+        scale: 1.1,
+      }}
+      className="col-span-6 bg-slate-700 md:col-span-3"
+    >
+      <h1>GhitHub Search</h1>
+      <p>
+        Prueba Tecnica con uso de API de GitHub con uso de UseContext y cambio
+        de temas
+      </p>
+      <a
+        href="https://github.com/Abby25CE/Github_Search.git"
+        className="flex items-center gap-1 text-red-300 hover:underline"
+      >
+        Ver codigo <FiArrowRight />
+      </a>
+    </Block>
+    <Block
+      whileHover={{
+        rotate: "2.5deg",
+        scale: 1.1,
+      }}
+      className="col-span-6 bg-slate-700 md:col-span-3"
+    >
+      <a
+        href="https://github.com/Abby25CE/Github_Search.git"
+        className="flex items-center gap-1 text-red-300 hover:underline"
+      >
+        Mas Proyectos <FiArrowRight />
+      </a>
+    </Block>
+  </>
 );
 
 const AboutBlock = () => (
