@@ -2,7 +2,7 @@
 
 export const Hero = () => {
   return (
-    <div className="bg-blue-400 flex flex-col lg:flex-row h-screen w-full overflow-hidden">
+    <div className=" flex flex-col lg:flex-row h-screen w-full overflow-hidden">
       {/* Contenedor de texto */}
       <div className="flex flex-col items-center justify-center text-neutral-700 p-4 lg:pl-14 lg:w-1/2">
         <h2 className="text-xl lg:text-4xl font-bold">
