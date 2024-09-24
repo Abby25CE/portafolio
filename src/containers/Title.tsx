@@ -2,20 +2,20 @@
 import { useEffect } from "react";
 
 interface PageTitleProps {
-  title: string; // Asegúrate de que sea un string
+  title: string;
   favicon: string;
 }
 
 export const Title: React.FC<PageTitleProps> = ({
-  title = "Título por defecto",
+  title,
   favicon = "/app/favicon.ico",
 }) => {
-  (title = "Título por defecto"),
+  (title = "AbbyCE"),
     favicon,
     useEffect(() => {
       const handleVisibilityChange = () => {
         if (document.hidden) {
-          document.title = "¡Vuelve pronto!";
+          document.title = "¡No me dejes!";
           changeFavicon("/app/favicon.ico");
         } else {
           document.title = title;
@@ -39,8 +39,7 @@ export const Title: React.FC<PageTitleProps> = ({
 
       document.addEventListener("visibilitychange", handleVisibilityChange);
 
-      // Establecer el título y favicon inicial
-      document.title = title || "Título por defecto"; // Usa un valor por defecto
+      document.title = title || "AbbyCE";
       changeFavicon(favicon);
 
       return () => {
@@ -51,7 +50,7 @@ export const Title: React.FC<PageTitleProps> = ({
       };
     }, [title, favicon]);
 
-  return null; // Este componente no renderiza nada en el DOM
+  return null;
 };
 
 export default Title;
