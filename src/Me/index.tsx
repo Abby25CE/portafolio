@@ -3,12 +3,7 @@ import React from "react";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import {
-  SiGithub,
-  SiLinkedin,
-  SiNextdotjs,
-  SiCreatereactapp,
-} from "react-icons/si";
+import { SiGithub, SiLinkedin, SiGoogledrive } from "react-icons/si";
 
 export const RevealBento = () => {
   return (
@@ -24,7 +19,7 @@ export const RevealBento = () => {
         <HeaderBlock />
         <SocialsBlock />
         <AboutBlock />
-        <EmailListBlock />
+        <ListBlock />
         <LocationBlock />
         <WorkBlock />
       </motion.div>
@@ -92,20 +87,13 @@ const HeaderBlock = () => {
           Soy desarrolladora FrontEnd y creo paginas cool.... Si como esta
         </span>
       </h1>
-      <div className="flex flex-row justify-between">
-        <a
-          href="mailto:abby250399@gmail.com"
-          className="flex items-center gap-1 text-red-300 hover:underline"
-        >
-          Contact me <FiArrowRight />
-        </a>
-        <button
-          className="px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
-          onClick={handleDownload}
-        >
-          Descargar CV
-        </button>
-      </div>
+
+      <button
+        className="px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
+        onClick={handleDownload}
+      >
+        Descargar CV
+      </button>
     </Block>
   );
 };
@@ -120,10 +108,10 @@ const SocialsBlock = () => (
       className="col-span-6 bg-red-500 md:col-span-3"
     >
       <a
-        href="#"
+        href="mailto:abby250399@gmail.com"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiCreatereactapp />
+        <FiMail />
       </a>
     </Block>
     <Block
@@ -162,10 +150,10 @@ const SocialsBlock = () => (
       className="col-span-6 bg-blue-500 md:col-span-3"
     >
       <a
-        href="#"
+        href="https://drive.google.com/drive/folders/1ayBmV_-4E8Y-6SsEvNJ1JQj6-Ts3511a?usp=sharing"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiNextdotjs />
+        <SiGoogledrive />
       </a>
     </Block>
   </>
@@ -178,14 +166,14 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-slate-700 md:col-span-3"
+      className="col-span-6 bg-red-400 md:col-span-3"
     >
       <h1>Prueba tecnica</h1>
       <h2>Buscador de Peliculas con uso de API</h2>
       <p>Con uso de useContext, creacion de CustomeHooks</p>
       <a
         href="https://github.com/Abby25CE/Buscador_Peliculas.git"
-        className="flex items-center gap-1 text-red-300 hover:underline"
+        className="flex items-center gap-1 text-black hover:underline"
       >
         Ver codigo <FiArrowRight />
       </a>
@@ -195,7 +183,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-slate-700 md:col-span-3"
+      className="col-span-6 bg-blue-400 md:col-span-3"
     >
       <h1>Prueba tecnica</h1>
       <h2>
@@ -204,7 +192,7 @@ const WorkBlock = () => (
       </h2>
       <a
         href="https://github.com/Abby25CE/Shopping.git"
-        className="flex items-center gap-1 text-red-300 hover:underline"
+        className="flex items-center gap-1 text-black hover:underline"
       >
         Ver codigo <FiArrowRight />
       </a>
@@ -214,7 +202,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-slate-700 md:col-span-3"
+      className="col-span-6 bg-orange-400 md:col-span-3"
     >
       <h1>Este mismo portafolio</h1>
       <p>
@@ -222,7 +210,7 @@ const WorkBlock = () => (
       </p>
       <a
         href="https://github.com/Abby25CE/portafolio.git"
-        className="flex items-center gap-1 text-red-300 hover:underline"
+        className="flex items-center gap-1 text-black hover:underline"
       >
         Ver codigo <FiArrowRight />
       </a>
@@ -232,7 +220,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-slate-700 md:col-span-3"
+      className="col-span-6 bg-amber-400 md:col-span-3"
     >
       <h1>Prueba tecnica Calculadora</h1>
       <p>
@@ -241,7 +229,7 @@ const WorkBlock = () => (
       </p>
       <a
         href="https://github.com/Abby25CE/Calculadora.git"
-        className="flex items-center gap-1 text-red-300 hover:underline"
+        className="flex items-center gap-1 text-black hover:underline"
       >
         Ver codigo <FiArrowRight />
       </a>
@@ -251,7 +239,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-slate-700 md:col-span-3"
+      className="col-span-6 bg-lime-400 md:col-span-3"
     >
       <h1>Prueba tecnica con API</h1>
       <p>
@@ -261,7 +249,7 @@ const WorkBlock = () => (
       </p>
       <a
         href="https://github.com/Abby25CE/React_Prueba.git"
-        className="flex items-center gap-1 text-red-300 hover:underline"
+        className="flex items-center gap-1 text-black hover:underline"
       >
         Ver codigo <FiArrowRight />
       </a>
@@ -271,7 +259,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-slate-700 md:col-span-3"
+      className="col-span-6 bg-green-400 md:col-span-3"
     >
       <h1>Prueba tecnica Clima</h1>
       <p>
@@ -280,7 +268,7 @@ const WorkBlock = () => (
       </p>
       <a
         href="https://github.com/Abby25CE/Clima_React.git"
-        className="flex items-center gap-1 text-red-300 hover:underline"
+        className="flex items-center gap-1 text-black hover:underline"
       >
         Ver codigo <FiArrowRight />
       </a>
@@ -290,7 +278,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-slate-700 md:col-span-3"
+      className="col-span-6 bg-slate-400 md:col-span-3"
     >
       <h1>GhitHub Search</h1>
       <p>
@@ -299,7 +287,7 @@ const WorkBlock = () => (
       </p>
       <a
         href="https://github.com/Abby25CE/Github_Search.git"
-        className="flex items-center gap-1 text-red-300 hover:underline"
+        className="flex items-center gap-1 text-black hover:underline"
       >
         Ver codigo <FiArrowRight />
       </a>
@@ -311,12 +299,11 @@ const WorkBlock = () => (
       }}
       className="col-span-6 bg-slate-700 md:col-span-3"
     >
-      <a
-        href="https://github.com/Abby25CE/Github_Search.git"
-        className="flex items-center gap-1 text-red-300 hover:underline"
-      >
-        Mas Proyectos <FiArrowRight />
-      </a>
+      <p>
+        Proyectos escolares, donde participe con mis compañeros, donde se
+        crearon sistemas a medida a empresas y de forma academica donde se
+        entregaban los proyectos ganadores
+      </p>
     </Block>
   </>
 );
@@ -348,9 +335,9 @@ const LocationBlock = () => (
   </Block>
 );
 
-const EmailListBlock = () => (
+const ListBlock = () => (
   <Block className="col-span-12 md:col-span-9">
-    <p className="mb-3 text-lg">
+    <div className="mb-3 text-lg">
       Aquí hay algunas tecnologías con las que he trabajado:
       <br />
       <div className="grid grid-cols-2">
@@ -369,17 +356,20 @@ const EmailListBlock = () => (
           Figma <br />
         </p>
       </div>
-    </p>
+    </div>
   </Block>
 );
 
 const Footer = () => {
   return (
     <footer className="mt-12">
-      <p className="text-center text-zinc-400">
-        Made with ❤️ by{" "}
-        <a href="#" className="text-red-300 hover:underline">
-          @tomisloading
+      <p className="flex flex-col justify-center items-center text-black">
+        © Copyright 2024 AbbyCE. All rights reserved.
+        <a
+          href="https://www.linkedin.com/in/luna-carrillo-espinosa-922056313/"
+          className="text-slate-800 hover:underline"
+        >
+          @LunaCE25
         </a>
       </p>
     </footer>
