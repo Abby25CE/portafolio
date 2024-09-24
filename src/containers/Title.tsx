@@ -7,11 +7,11 @@ interface PageTitleProps {
 }
 
 export const Title: React.FC<PageTitleProps> = ({
-  title,
+  title = "/app/favicon.ico",
   favicon = "/app/favicon.ico",
 }) => {
   (title = "AbbyCE"),
-    favicon,
+    (favicon = "/app/favicon.ico"),
     useEffect(() => {
       const handleVisibilityChange = () => {
         if (document.hidden) {
