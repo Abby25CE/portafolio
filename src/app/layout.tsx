@@ -1,7 +1,6 @@
-// src/app/layout.tsx
 import Head from "next/head";
-import { metadata } from "../containers/metadata"; // Asegúrate de que la ruta sea correcta
-import Title from "../containers/Title"; // Importa el nuevo componente
+import { metadata } from "../containers/metadata";
+import Title from "../containers/Title";
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,7 +8,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const title = (metadata?.title as string) || "Título por defecto"; // Valor por defecto
+  const title = (metadata?.title as string) || "AbbyCE";
   const favicon = "/favicon.ico";
 
   return (
@@ -18,7 +17,6 @@ export default function RootLayout({
         <link rel="icon" href={favicon} />
       </Head>
       <body>
-        {/* Usamos el componente PageTitle */}
         <Title title={title} favicon={favicon} />
         {children}
       </body>
