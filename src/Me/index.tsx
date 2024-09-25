@@ -21,7 +21,7 @@ export const RevealBento = () => {
         <SocialsBlock />
         <AboutBlock />
         <ListBlock />
-        {/* <LocationBlock /> */}
+
         <WorkBlock />
       </motion.div>
       <Footer />
