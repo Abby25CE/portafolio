@@ -4,13 +4,13 @@ export const Hero = () => {
   return (
     <div className=" flex flex-col lg:flex-row h-screen w-full overflow-hidden">
       {/* Contenedor de texto */}
-      <div className="flex flex-col items-center justify-center text-slate-900 p-4 lg:pl-14 lg:w-1/2">
+      <div className="flex flex-col justify-center text-slate-900 p-4 lg:pl-14 lg:w-1/2">
         <h2 className="text-xl lg:text-4xl font-bold">
           Hola me presento, soy
           <br />
         </h2>
-        <h1 className="lg:text-7xl text-2xl ">
-          {"<"} <strong>Desarrolladora FrontEnd</strong> con React {">"}
+        <h1 className="lg:text-7xl text-2xl text-center">
+          {"<"} <strong>Desarrolladora FrontEnd</strong> {">"}
         </h1>
         <h2 className="text-xl lg:text-2xl font-bold text-right">
           Soy Luna Abigail
