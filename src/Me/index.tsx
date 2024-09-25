@@ -148,7 +148,7 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-blue-500 md:col-span-3"
+      className="col-span-6 bg-purple-500 md:col-span-3"
     >
       <a
         href="https://drive.google.com/drive/folders/1ayBmV_-4E8Y-6SsEvNJ1JQj6-Ts3511a?usp=sharing"
