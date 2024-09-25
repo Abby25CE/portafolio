@@ -21,7 +21,8 @@ export const RevealBento = () => {
         <SocialsBlock />
         <AboutBlock />
         <ListBlock />
-
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        {/* <LocationBlock /> */}
         <WorkBlock />
       </motion.div>
       <Footer />
@@ -324,6 +325,21 @@ const AboutBlock = () => (
     </p>
   </Block>
 );
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// const LocationBlock = () => (
+//   <Block className="col-span-12 flex flex-col justify-center items-center gap-4 md:col-span-3">
+//     <a
+//       className="text-center text-lg text-zinc-400"
+//       href="https://maps.app.goo.gl/h3c4yKZg217Vzhf38"
+//       target="_blank"
+//       rel="noopener noreferrer"
+//     >
+//       <FiMapPin className="text-center text-3xl" />
+//       Morelia Michoacan
+//     </a>
+//   </Block>
+// );
 
 const ListBlock = () => (
   <Block className="col-span-12 md:col-span-6">
