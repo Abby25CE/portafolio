@@ -5,7 +5,6 @@ interface PageTitleProps {
   title: string;
   favicon: string;
 }
-
 export const Title: React.FC<PageTitleProps> = ({
   title = "AbbyCE",
   favicon = "/app/favicon.ico",
