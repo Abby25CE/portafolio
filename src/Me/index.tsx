@@ -108,6 +108,7 @@ const SocialsBlock = () => (
       className="col-span-6 bg-red-500 md:col-span-3"
     >
       <a
+        // onMouseEnter={() => alert("Click Me")}
         href="mailto:abby250399@gmail.com"
         className="grid h-full place-content-center text-3xl text-white"
       >
