@@ -4,6 +4,7 @@ import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
 import { SiGithub, SiLinkedin, SiGoogledrive } from "react-icons/si";
+import Image from "next/image";
 
 export const RevealBento = () => {
   return (
@@ -76,10 +77,12 @@ const HeaderBlock = () => {
 
   return (
     <Block className="col-span-12 row-span-2 md:col-span-6">
-      <img
+      <Image
         src="/assets/Yo.jpeg"
         alt="avatar"
         className="mb-4 size-14 rounded-full"
+        width={50}
+        height={50}
       />
       <h1 className="mb-12 text-2xl font-medium leading-tight">
         Hola, soy Luna Abigail{" "}
