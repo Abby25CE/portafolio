@@ -21,6 +21,7 @@ export const RevealBento = () => {
         <SocialsBlock />
         <AboutBlock />
         <ListBlock />
+        <LocationBlock />
         <WorkBlock />
       </motion.div>
       <Footer />
@@ -312,7 +313,7 @@ const WorkBlock = () => (
 );
 
 const AboutBlock = () => (
-  <Block className="col-span-6 text-xl leading-snug">
+  <Block className="col-span-12 text-xl leading-snug">
     <strong>🚀 Una apasionada por el desarrollo y la programación 🧪</strong>
     <p>
       Soy una desarrolladora FrontEnd JavaScript con dos años de experiencia. Me
@@ -323,8 +324,23 @@ const AboutBlock = () => (
     </p>
   </Block>
 );
+
+const LocationBlock = () => (
+  <Block className="col-span-12 flex flex-col justify-center items-center gap-4 md:col-span-3">
+    <a
+      className="text-center text-lg text-zinc-400"
+      href="https://maps.app.goo.gl/h3c4yKZg217Vzhf38"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FiMapPin className="text-center text-3xl" />
+      Morelia Michoacan
+    </a>
+  </Block>
+);
+
 const ListBlock = () => (
-  <Block className="col-span-12 md:col-span-6">
+  <Block className="col-span-12 md:col-span-9">
     <div className="mb-3 text-lg">
       Aquí hay algunas tecnologías con las que he trabajado:
       <br />
