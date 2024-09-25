@@ -346,7 +346,7 @@ const ListBlock = () => (
       <br />
       <div className="grid grid-cols-2">
         <p>
-          Tecnologias Usuales <br />
+          Tecnologias FrontEnd <br />
           React.js <br />
           Next.js <br />
           JavaScript (ES6+) <br />
@@ -354,7 +354,7 @@ const ListBlock = () => (
           TypeScript
         </p>
         <p>
-          Tecnologías no usuales <br />
+          Tecnologías BackEnd <br />
           Node.js <br />
           Express.js <br />
           Figma <br />
