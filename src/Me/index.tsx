@@ -66,7 +66,7 @@ const Block = ({ className, ...rest }: BlockProps) => {
         damping: 50,
       }}
       className={twMerge(
-        "col-span-4 rounded-lg border border-zinc-700 bg-zinc-800 p-6",
+        "col-span-4 rounded-lg border border-zinc-700 bg-[#546D8A] p-6",
         className
       )}
       {...rest}
@@ -91,19 +91,19 @@ const HeaderBlock = () => {
       <Image
         src="/assets/Yo.jpeg"
         alt="avatar"
-        className="mb-4 size-14 rounded-full"
-        width={50}
-        height={50}
+        className="mb-4 size-20 rounded-full"
+        width={70}
+        height={70}
       />
       <h1 className="mb-12 text-2xl font-medium leading-tight">
         Hola, soy Luna Abigail{" "}
-        <span className="text-zinc-400">
+        <span className="text-slate-900">
           Soy desarrolladora FrontEnd y creo paginas cool.... Si como esta
         </span>
       </h1>
 
       <button
-        className="px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
+        className="px-6 py-2 font-medium bg-[#282D33] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
         onClick={handleDownload}
       >
         Descargar CV
@@ -119,7 +119,7 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-red-500 md:col-span-3"
+      className="col-span-6 bg-red-400 md:col-span-3"
     >
       <a
         // onMouseEnter={() => alert("Click Me")}
@@ -134,7 +134,7 @@ const SocialsBlock = () => (
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-green-600 md:col-span-3"
+      className="col-span-6 bg-green-400 md:col-span-3"
     >
       <a
         href="https://github.com/Abby25CE"
@@ -148,7 +148,7 @@ const SocialsBlock = () => (
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-zinc-50 md:col-span-3"
+      className="col-span-6 bg-zinc-200 md:col-span-3"
     >
       <a
         href="https://www.linkedin.com/in/luna-carrillo-espinosa-922056313/"
@@ -162,7 +162,7 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-purple-500 md:col-span-3"
+      className="col-span-6 bg-purple-400 md:col-span-3"
     >
       <a
         href="https://drive.google.com/drive/folders/1ayBmV_-4E8Y-6SsEvNJ1JQj6-Ts3511a?usp=sharing"
@@ -181,7 +181,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-red-400 md:col-span-3"
+      className="col-span-6 bg-[#A287E6] md:col-span-3"
     >
       <h1>Prueba tecnica</h1>
       <h2>Buscador de Peliculas con uso de API</h2>
@@ -198,7 +198,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-violet-400 md:col-span-3"
+      className="col-span-6 bg-green-400 md:col-span-3"
     >
       <h1>Prueba tecnica</h1>
       <h2>
@@ -217,7 +217,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-orange-400 md:col-span-3"
+      className="col-span-6 bg-emerald-400 md:col-span-3"
     >
       <h1>Este mismo portafolio</h1>
       <p>
@@ -235,7 +235,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-amber-400 md:col-span-3"
+      className="col-span-6 bg-indigo-400 md:col-span-3"
     >
       <h1>Prueba tecnica Calculadora</h1>
       <p>
@@ -254,7 +254,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-lime-400 md:col-span-3"
+      className="col-span-6 bg-violet-500 md:col-span-3"
     >
       <h1>Prueba tecnica con API</h1>
       <p>
@@ -274,7 +274,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-green-400 md:col-span-3"
+      className="col-span-6 bg-[#C26BA2] md:col-span-3"
     >
       <h1>Prueba tecnica Clima</h1>
       <p>
@@ -293,7 +293,7 @@ const WorkBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-slate-400 md:col-span-3"
+      className="col-span-6 bg-[#517DB0] md:col-span-3"
     >
       <h1>GhitHub Search</h1>
       <p>
