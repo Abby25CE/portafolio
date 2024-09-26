@@ -3,8 +3,19 @@ import React from "react";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import { SiGithub, SiLinkedin, SiGoogledrive } from "react-icons/si";
+import {
+  SiGithub,
+  SiLinkedin,
+  SiGoogledrive,
+  SiCreatereactapp,
+  SiNextdotjs,
+  SiTypescript,
+  SiExpress,
+} from "react-icons/si";
 import Image from "next/image";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaFigma, FaNode } from "react-icons/fa";
 
 export const RevealBento = () => {
   return (
@@ -345,20 +356,41 @@ const ListBlock = () => (
       Aquí hay algunas tecnologías con las que he trabajado:
       <br />
       <div className="grid grid-cols-2">
-        <p>
-          Tecnologias FrontEnd <br />
-          React.js <br />
-          Next.js <br />
-          JavaScript (ES6+) <br />
-          TailwindCSS <br />
-          TypeScript
-        </p>
-        <p>
-          Tecnologías BackEnd <br />
-          Node.js <br />
-          Express.js <br />
-          Figma <br />
-        </p>
+        <ul className="flex flex-col">
+          Tecnologias FrontEnd
+          <li className="flex items-center gap-3">
+            <SiCreatereactapp /> React.js
+          </li>
+          <li className="flex items-center gap-3">
+            <SiNextdotjs /> Next.js
+          </li>
+          <li className="flex items-center gap-3">
+            <IoLogoJavascript />
+            JavaScript (ES6+)
+          </li>
+          <li className="flex items-center gap-3">
+            <RiTailwindCssFill />
+            TailwindCSS
+          </li>
+          <li className="flex items-center gap-3">
+            <SiTypescript />
+            TypeScript
+          </li>
+        </ul>
+        <ul className="flex flex-col">
+          Tecnologías BackEnd
+          <li className="flex items-center gap-3">
+            <FaNode />
+            Node.js
+          </li>
+          <li className="flex items-center gap-3">
+            <SiExpress /> Express.js
+          </li>
+          <li className="flex items-center gap-3">
+            <FaFigma />
+            Figma
+          </li>
+        </ul>
       </div>
     </div>
   </Block>
