@@ -98,7 +98,7 @@ const HeaderBlock = () => {
       <h1 className="mb-12 text-2xl font-medium leading-tight">
         Hola, soy Luna Abigail{" "}
         <span className="text-slate-900">
-          Soy desarrolladora FrontEnd y creo paginas cool.... Si como esta
+          Soy desarrolladora FrontEnd y creo paginas cool.... Sí, como esta
         </span>
       </h1>
 
