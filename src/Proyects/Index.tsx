@@ -65,7 +65,7 @@ interface CardType {
 
 const Card = ({ title, subtitle, text, Icon }: CardType) => {
   return (
-    <a className="w-full h-60 p-4 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white">
+    <a className="w-full lg:h-60 h-72 p-4 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white">
       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
 
       <Icon
@@ -79,7 +79,7 @@ const Card = ({ title, subtitle, text, Icon }: CardType) => {
       <p className="text-slate-400 text-end group-hover:text-violet-200 relative z-10 duration-300">
         {subtitle}
       </p>
-      <p className="text-slate-400 text-justify group-hover:text-violet-200 relative z-10 duration-300">
+      <p className="text-slate-400 text-justify lg:text-base text-sm group-hover:text-violet-200 relative z-10 duration-300">
         {text}
       </p>
     </a>
