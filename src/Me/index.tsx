@@ -16,6 +16,7 @@ import Image from "next/image";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaFigma, FaNode } from "react-icons/fa";
+import ButtonH from "@/containers/Button";
 
 export const RevealBento = () => {
   return (
@@ -101,13 +102,17 @@ const HeaderBlock = () => {
           Soy desarrolladora FrontEnd y creo paginas cool.... Sí, como esta
         </span>
       </h1>
-
-      <button
-        className="px-6 py-2 font-medium bg-[#282D33] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
-        onClick={handleDownload}
-      >
-        Descargar CV
-      </button>
+      <div className="flex flex-row justify-between">
+        <button
+          className="px-6 py-2 font-medium bg-[#282D33] text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
+          onClick={handleDownload}
+        >
+          Descargar CV
+        </button>
+        <ButtonH>
+          <a href="/Proyectos">Mis Proyectos</a>
+        </ButtonH>
+      </div>
     </Block>
   );
 };
