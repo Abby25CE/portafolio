@@ -17,6 +17,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaFigma, FaNode } from "react-icons/fa";
 import ButtonH from "@/containers/Button";
+import { Footer } from "@/containers/Footer";
 
 export const RevealBento = () => {
   return (
@@ -27,7 +28,7 @@ export const RevealBento = () => {
         transition={{
           staggerChildren: 0.05,
         }}
-        className="mx-auto grid max-w-6xl grid-flow-dense grid-cols-12 gap-4"
+        className="mx-auto grid max-w-6xl grid-flow-dense grid-cols-12 gap-4 pb-12"
       >
         <HeaderBlock />
         <SocialsBlock />
@@ -400,19 +401,3 @@ const ListBlock = () => (
     </div>
   </Block>
 );
-
-const Footer = () => {
-  return (
-    <footer className="mt-12">
-      <p className="flex flex-col justify-center items-center text-black">
-        © Copyright 2024 AbbyCE. All rights reserved.
-        <a
-          href="https://www.linkedin.com/in/luna-carrillo-espinosa-922056313/"
-          className="text-slate-800 hover:underline"
-        >
-          @LunaCE25
-        </a>
-      </p>
-    </footer>
-  );
-};
