@@ -8,16 +8,20 @@ import {
   FiSlack,
   FiLink2,
   FiSun,
+  FiChevronLeft,
 } from "react-icons/fi";
 
 const HoverDevCards = () => {
   return (
     <div className="p-4">
-      <div className="pb-9 text-center text-2xl">
-        <p>M i s P r o y e c t o s</p>
-        <hr className="border-2" />
+      <div className="flex flex-row pb-3 items-center justify-between text-2xl">
+        <a href="/">
+          <FiChevronLeft />
+        </a>
+        <p className="">M i s P r o y e c t o s</p>
+        <div></div>
       </div>
-
+      <hr className="border-2 mb-6" />
       <div className=" grid gap-4 grid-cols-2 lg:grid-cols-4">
         <Card
           title="Notaria 183"
