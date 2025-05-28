@@ -18,6 +18,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaFigma, FaNode } from "react-icons/fa";
 import ButtonH from "@/containers/Button";
 import { Footer } from "@/containers/Footer";
+import { DiMysql } from "react-icons/di";
 
 export const RevealBento = () => {
   return (
@@ -395,6 +396,10 @@ const ListBlock = () => (
           <li className="flex items-center gap-3">
             <FaFigma />
             Figma
+          </li>
+          <li className="flex items-center gap-3">
+            <DiMysql />
+            SQL
           </li>
         </ul>
       </div>
