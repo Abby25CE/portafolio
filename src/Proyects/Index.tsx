@@ -29,19 +29,19 @@ const HoverDevCards = () => {
         <Card
           title="Digital Ignition"
           subtitle="Desarrolladora Web"
-          text="Encargada de la maquetacion y del diseño responsivo enfocado en moviles, tambien de pruebas unitarias de las mismas "
+          text="Encargada de la maquetacion y del diseño responsivo enfocado en moviles donde tambien de pruebas unitarias de las mismas "
           Icon={FiSlack}
         />
         <Card
           title="Gaytan Studios"
           subtitle="Desarrolladora Web"
-          text="Encargada de crear componentes en React dinamicos y reutilizables donde tambien fui apoyo de la creacion de consultas en SQL."
+          text="Encargada de crear componentes en React, dinamicos y reutilizables donde tambien fui apoyo en la creacion de consultas en SQL."
           Icon={FiCreditCard}
         />
         <Card
           title="Pulcera NFC"
           subtitle="Desarrolladora Web"
-          text="De manera independiente desarrolle un portafolio personalizado enfocado en el diseño responsivo para moviles y donde fue programnado en una pulcera NFC para su uso."
+          text="De manera independiente desarrolle un portafolio personalizado enfocado en el diseño responsivo para moviles y donde fue programado en una pulcera NFC para su uso."
           Icon={FiLink2}
         />
         {/*
@@ -79,7 +79,7 @@ const Card = ({ title, subtitle, text, Icon }: CardType) => {
       <p className="text-slate-400 text-end group-hover:text-violet-200 relative z-10 duration-300">
         {subtitle}
       </p>
-      <p className="text-slate-400 text-justify lg:text-base text-sm group-hover:text-violet-200 relative z-10 duration-300">
+      <p className="text-slate-400 text-justify lg:text-base text-xs group-hover:text-violet-200 relative z-10 duration-300">
         {text}
       </p>
     </a>
