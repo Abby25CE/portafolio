@@ -55,13 +55,18 @@ const HoverDevCards = () => {
             text="De manera independiente desarrolle un portafolio personalizado enfocado en el diseño responsivo para moviles y donde fue programado en una pulcera NFC para su uso."
             Icon={FiLink2}
           />
-          {/*
-        <Card
-          title="Granja Espinoza"
-          subtitle="Desarrolladora Web"
-          text="De manera independiente desarrolle una Landing Page personalizada, para la Finca Espinoza"
-          Icon={FiSun}
-        />*/}
+          <Card
+            title="Trello"
+            subtitle="Desarrolladora Web"
+            text="De manera independiente desarrolle un tablero de Trello personalizado enfocado en la funcion de tener mas de un tablero y donde fue programado con el framework Next."
+            Icon={FiUser}
+          />
+          <Card
+            title="Granja Espinoza"
+            subtitle="Desarrolladora Web"
+            text="De manera independiente desarrolle una Landing Page personalizada, para la Finca Espinoza"
+            Icon={FiSun}
+          />
         </div>
       </div>
       <Footer />
