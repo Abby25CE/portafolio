@@ -13,6 +13,11 @@ import {
 const HoverDevCards = () => {
   return (
     <div className="p-4">
+      <div className="pb-9 text-center text-2xl">
+        <p>M i s P r o y e c t o s</p>
+        <hr className="border-2" />
+      </div>
+
       <div className=" grid gap-4 grid-cols-2 lg:grid-cols-4">
         <Card
           title="Notaria 183"
